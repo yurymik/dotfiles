@@ -1,0 +1,5 @@
+# Bash configuration for FTNT
+
+export USESUDO=/usr/bin/sudo
+export FORTIPKG=$HOME/fortipkg
+
