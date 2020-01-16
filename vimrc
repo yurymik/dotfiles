@@ -122,7 +122,6 @@ let g:Powerline_theme = 'default'
 let g:Powerline_stl_path_style = 'relative'
 
 " Zenburn for Powerlines from ming13 https://gist.github.com/1665748
-" Download gist to ${VIM_POWERLINE_PATH}/autoload/Powerline/Colorschemes/zenburn.vim
 let powerline_zenburn_src="~/dotfiles/vim/powerline-zenburn.vim"
 let powerline_zenburn_dst="~/.vim/bundle/vim-powerline/autoload/Powerline/Colorschemes/zenburn.vim"
 if !filereadable(expand(powerline_zenburn_dst))
