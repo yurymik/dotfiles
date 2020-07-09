@@ -60,6 +60,7 @@ set autoindent              " Use indentation of the previous line
 set smartindent             " Auto-indent for C-like files
 
 nnoremap Q <nop>            " Disable Ex mode
+syntax on                   " Enable syntax highlighting
 
 " Map // to search for selected text. See [1] for details.
 " [1] http://vim.wikia.com/wiki/Search_for_visually_selected_text
