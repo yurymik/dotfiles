@@ -52,6 +52,7 @@ endif
 filetype plugin indent on   " Re-enable file typing
 set laststatus=2            " Always display status line
 set encoding=utf-8          " Force UTF-8 encoding
+set noswapfile              " Disable creation of .swp files
 
 set expandtab               " Replace TABs with spaces
 set tabstop=4 shiftwidth=4  " Use 4 space for TAB
