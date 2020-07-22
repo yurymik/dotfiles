@@ -26,9 +26,6 @@ Plugin 'gmarik/vundle'
 " Zenburn color scheme
 Plugin 'jnurmine/Zenburn'
 
-" Powerline for Vim
-Plugin 'Lokaltog/vim-powerline'
-
 " Command-T: Fast file navigation for VIM
 Plugin 'wincent/command-t'
 
@@ -100,38 +97,6 @@ if $TERM =~ '^screen-256color'
     map  <Esc>OF <End>
     imap <Esc>OF <End>
 endif
-
-" Tell Powerline to use patched fonts with special symbols
-" (first symlink file from dotfiles/fonts to ~/.fonts and
-" update font cache with "sudo fc-cache -vf")
-let g:Powerline_symbols = 'fancy'
-
-" Use shorter mode names to save some screen space
-let g:Powerline_mode_n  = 'N '  " Normal
-let g:Powerline_mode_i  = 'I '  " Insert
-let g:Powerline_mode_R  = 'R '  " Replace
-let g:Powerline_mode_v  = 'V '  " Visual
-let g:Powerline_mode_V  = 'VL'  " Visual linewise
-let g:Powerline_mode_cv = 'VB'  " Visual blockwise
-let g:Powerline_mode_s  = 'S '  " Select
-let g:Powerline_mode_S  = 'SL'  " Select linewise
-let g:Powerline_mode_cs = 'SB'  " Select blockwise
-
-" Use darker than default theme
-let g:Powerline_theme = 'default'
-
-" Use relative paths in the file name segment
-let g:Powerline_stl_path_style = 'relative'
-
-" Zenburn for Powerlines from ming13 https://gist.github.com/1665748
-let powerline_zenburn_src="~/dotfiles/vim/powerline-zenburn.vim"
-let powerline_zenburn_dst="~/.vim/bundle/vim-powerline/autoload/Powerline/Colorschemes/zenburn.vim"
-if !filereadable(expand(powerline_zenburn_dst))
-    echo "Installing Zenburn for Powerlines"
-    echo ""
-    silent execute "!cp " . powerline_zenburn_src . " " . powerline_zenburn_dst
-endif
-let g:Powerline_colorscheme = 'zenburn'
 
 " Set DarkSlateGray2 for selection background
 hi Visual term=reverse ctermbg=87 ctermfg=Black
