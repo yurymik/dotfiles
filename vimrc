@@ -26,9 +26,6 @@ Plugin 'gmarik/vundle'
 " Zenburn color scheme
 Plugin 'jnurmine/Zenburn'
 
-" Command-T: Fast file navigation for VIM
-Plugin 'wincent/command-t'
-
 " AnsiEsc: show ANSI escape sequences as color text
 " Use ":AnsiEsc" to activate on a buffer
 Plugin 'powerman/vim-plugin-AnsiEsc'
