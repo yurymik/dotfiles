@@ -1,0 +1,9 @@
+# See https://cgdb.github.io/docs/cgdb.html
+
+# Case insensitive search
+set ignorecase
+
+# Fix TERM for cgdb:
+# mv /opt/cgdb/bin/cgdb /opt/cgdb/bin/cgdb-bin
+# echo "TERM=screen /opt/cgdb/bin/cgdb-bin $@" opt/cgdb/bin/cgdb
+# chmod +x /opt/cgdb/bin/cgdb-bin
